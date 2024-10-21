@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="prehome.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="box" id="nameBox">
+        <!-- Heading at the top of the box -->
+        <h2>Are You Ready to See About?</h2>
+<br>
+        <!-- Container for subdivisions with grid layout -->
+        <div class="subdivisions-container" id="subdivisionsContainer">
+            <button onclick="document.location='file:///C:/Users/Geethaanjali/Desktop/VS%20CODE/home2.html'" class="subdivision">Sanjay Kumar</button>
+            <button onclick="document.location='file:///C:/Users/Geethaanjali/Desktop/VS%20CODE/Home.html'" class="subdivision">Vikaram Batara</button>
+        </div>
+    </div>
+
+
+
+
+    <script>
+        // Function to show an alert with the clicked name
+        function showAlert(name) {
+            alert('You clicked: ' + name);
+        }
+
+        // Array to track added names and avoid duplicates
+        const addedNames = ['Vvikaram Batara', 'Sanjay Kumar'];
+
+        // Regex to allow only letters and spaces
+        const namePattern = /^[A-Za-z\s]+$/;
+
+        // Function to add a new custom name
+        function addCustomName() {
+            const nameInput = document.getElementById('nameInput');
+            const name = nameInput.value.trim(); // Trim leading/trailing spaces
+
+            // Validation: Check if the input is empty
+            if (name === '') {
+                alert('Please enter a valid name!');
+                return;
+            }
+
+            // Validation: Check if the name is a duplicate
+            if (addedNames.includes(name)) {
+                alert('This name is already added!');
+                return;
+            }
+
+            // Validation: Check if the name has valid characters (letters and spaces only)
+            if (!namePattern.test(name)) {
+                alert('Please enter a valid name (letters and spaces only)!');
+                return;
+            }
+
+            // Validation: Check the length of the name (between 3 and 30 characters)
+            if (name.length < 3 || name.length > 30) {
+                alert('Name should be between 3 and 30 characters long!');
+                return;
+            }
+
+            // Create a new div element for the new name
+            const newDiv = document.createElement('div');
+            newDiv.className = 'subdivision';
+            newDiv.textContent = name;
+            newDiv.setAttribute('onclick', `showAlert('${name}')`);
+
+            // Append the new subdivision to the container
+            document.getElementById('subdivisionsContainer').appendChild(newDiv);
+
+            // Add the new name to the array to prevent duplicates
+            addedNames.push(name);
+
+            // Clear the input field after adding the name
+            nameInput.value = '';
+        }
+        
+        </script>-->
+</body>
+</html>

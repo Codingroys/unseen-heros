@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Quiz Page</title>
+    <link rel="stylesheet" href="Quizz.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <header>
+            <h1>General Knowledge Quiz</h1>
+        </header>
+        
+        <section class="quiz-section">
+            <form id="quiz-form">
+                <!-- Question 1 -->
+                <div class="question">
+                    <h3>1. How much points did vikram batra recive?</h3>
+                    <label><input type="radio" name="q1" value="A"> A) 3215 points  </label>
+                    <label><input type="radio" name="q1" value="B"> B) 4875 points  </label>
+                    <label><input type="radio" name="q1" value="C"> C) 9824 points </label>
+                </div>
+
+                <!-- Question 2 -->
+                <div class="question">
+                    <h3>2. How much bullets had hit vikram Batra in the war?</h3>
+                    <label><input type="radio" name="q2" value="A"> A)  21 bullets </label>
+                    <label><input type="radio" name="q2" value="B"> B) 15 bullets </label>
+                    <label><input type="radio" name="q2" value="C"> C) 13 bullets </label>
+                </div>
+
+                <!-- Question 3 -->
+                <div class="question">
+                    <h3>3. What is the name vikram batra's twin brothor?</h3>
+                    <label><input type="radio" name="q3" value="A"> A) vishal batra   </label>
+                    <label><input type="radio" name="q3" value="B"> B) kamal batra    </label>
+                    <label><input type="radio" name="q3" value="C"> C) ramchandra batra</label>
+                </div>
+            <!--question 4-->
+                <div class="question">
+                    <h3>3. What is the name vikram batra's twin brothor?</h3>
+                    <label><input type="radio" name="q4" value="A"> A)  vishal batra</label>
+                    <label><input type="radio" name="q4" value="B"> B) Mark Twain</label>
+                    <label><input type="radio" name="q4" value="C"> C) Charles Dickens</label>
+                </div>
+                 
+                <!--Question 5-->
+                <div class="question">
+                    <h3>5. What is vikram batra's famous Quote</h3>
+                    <label><input type="radio" name="q5" value="A"> A) William Shakespeare</label>
+                    <label><input type="radio" name="q5" value="B"> B) Mark Twain</label>
+                    <label><input type="radio" name="q5" value="C"> C) Charles Dickens</label>
+                </div>
+                <!--Question 6-->
+                <div class="question">
+                    <h3>6. When did kargil war begin?</h3>
+                    <label><input type="radio" name="q6" value="A"> A) William Shakespeare</label>
+                    <label><input type="radio" name="q6" value="B"> B) Mark Twain</label>
+                    <label><input type="radio" name="q6" value="C"> C) Charles Dickens</label>
+                </div>
+                <!--Question 7-->
+                <div class="question">
+                    <h3>7.Captain Vikram Batra was posthumously awarded which of the following honors for his bravery during the Kargil War?</h3>
+                    <label><input type="radio" name="q7" value="A"> A) William Shakespeare</label>
+                    <label><input type="radio" name="q7" value="B"> B) Mark Twain</label>
+                    <label><input type="radio" name="q7" value="C"> C) Charles Dickens</label>
+                </div>
+                <!--Question 8-->
+                <div class="question">
+                    <h3>8.Which college did Captain Vikram Batra attend before joining the Indian Military Academy??</h3>
+                    <label><input type="radio" name="q8" value="A"> A) William Shakespeare</label>
+                    <label><input type="radio" name="q8" value="B"> B) Mark Twain</label>
+                    <label><input type="radio" name="q8" value="C"> C) Charles Dickens</label>
+                </div>
+                <!--Question 9-->
+            <div class="question">
+                <h3>9. In which year Vikram Batra was joined in Indian Army?</h3>
+                <label><input type="radio" name="q9" value="A"> A)   1985 </label>
+                <label><input type="radio" name="q9" value="B"> B)   1999 </label>
+                <label><input type="radio" name="q9" value="C"> C)   1997 </label>
+            </div> 
+             <!--Question 10-->
+             <div class="question">
+                <h3>10. Captain Vikram Batra was a hero of which war?</h3>
+                <label><input type="radio" name="q10" value="A"> A)   World War II   </label>
+                <label><input type="radio" name="q10" value="B"> B)   Indo-China War </label>
+                <label><input type="radio" name="q10" value="C"> C)   Kargil War     </label>
+            </div> 
+
+
+                <button type="button" id="submit-btn">Submit Quiz</button>
+            </form>
+        </section>
+
+        <section id="result-section" class="hidden">
+            <h2>Your Score: <span id="score">0</span>/10</h2>
+            <p id="feedback"></p>
+            <button id="retry-btn">Try Again</button>
+        </section>
+    </div>  
+    <button  href="file:///C:/Users/Geethaanjali/Desktop/VS%20CODE/Home.html" id="rowan" >Back To Home</button>
+
+<script src="quizz.js"></script>
+</body>
+</html>
